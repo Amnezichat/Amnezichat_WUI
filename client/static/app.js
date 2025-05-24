@@ -374,3 +374,8 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   }, 3000);
 });
+
+window.addEventListener("unload", () => {
+  localStorage.removeItem("cachedMessages");
+  localStorage.removeItem("notifiedMessages");
+});

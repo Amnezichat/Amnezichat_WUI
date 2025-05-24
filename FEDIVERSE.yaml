@@ -1,0 +1,28 @@
+# This YAML follows the structure outlined in
+# https://git.disroot.org/ashx/fediverse-spec/src/branch/main/FEDIVERSE.md
+# http://kgtz2pmmov5jfvn3z4mqryffjnnw6krzrgxxoyaqhqckjrr4pckyhsqd.onion/ashx/fediverse-spec/src/branch/main/FEDIVERSE.md
+
+git:
+  repo_main:
+    clearnet:
+      browser: 'https://git.disroot.org/UmutCamliyurt/Amnezichat'
+      clone_http: 'https://git.disroot.org/UmutCamliyurt/Amnezichat.git'
+      clone_ssh: 'ssh://git@git.disroot.org/UmutCamliyurt/Amnezichat.git'
+    onion:
+      browser: 'http://kgtz2pmmov5jfvn3z4mqryffjnnw6krzrgxxoyaqhqckjrr4pckyhsqd.onion/UmutCamliyurt/Amnezichat'
+      clone_http: 'http://kgtz2pmmov5jfvn3z4mqryffjnnw6krzrgxxoyaqhqckjrr4pckyhsqd.onion/UmutCamliyurt/Amnezichat.git'
+  repo_mirror:
+    '0':
+      clearnet:
+        browser: 'https://codeberg.org/umutcamliyurt/Amnezichat'
+        clone_http: 'https://codeberg.org/umutcamliyurt/Amnezichat.git'
+        clone_ssh: 'ssh://git@codeberg.org:umutcamliyurt/Amnezichat.git'
+    '1':
+      clearnet:
+        browser: 'https://github.com/umutcamliyurt/Amnezichat'
+        clone_http: 'https://github.com/umutcamliyurt/Amnezichat.git'
+        clone_ssh: 'ssh://git@github.com:umutcamliyurt/Amnezichat.git'
+    '2':
+      onion:
+        browser: 'http://c2vz25ugnpnrqmzcksavlzyxmy3eavcxnyxjbjqkez2svoj5dlc5x7id.onion/umutcamliyurt/Amnezichat'
+        clone_http: 'http://c2vz25ugnpnrqmzcksavlzyxmy3eavcxnyxjbjqkez2svoj5dlc5x7id.onion/umutcamliyurt/Amnezichat.git'

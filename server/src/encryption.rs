@@ -66,7 +66,6 @@ pub fn decrypt_message(encrypted_text: &str, room_id: &str) -> Result<String, &'
 }
 
 pub fn is_message_encrypted(message: &str) -> bool {
-
     const ENCRYPTED_BEGIN_MARKER: &str = "-----BEGIN ENCRYPTED MESSAGE-----";
     const ENCRYPTED_END_MARKER: &str = "-----END ENCRYPTED MESSAGE-----";
     const DILITHIUM_PUBLIC_KEY_PREFIX: &str = "DILITHIUM_PUBLIC_KEY:";
@@ -79,30 +78,23 @@ pub fn is_message_encrypted(message: &str) -> bool {
         || message.starts_with(ECDH_KEY_EXCHANGE_PREFIX)
         || message.starts_with(KYBER_KEY_EXCHANGE_PREFIX)
     {
-
         return true;
     }
 
-    let begin_marker = if message.contains(ENCRYPTED_BEGIN_MARKER) { 
-        ENCRYPTED_BEGIN_MARKER
-    } else {
-        println!("Missing or unrecognized begin marker.");
-        return false;
-    };
-
-    let end_marker = if message.contains(ENCRYPTED_END_MARKER) { 
-        ENCRYPTED_END_MARKER
-    } else {
-        println!("Missing or unrecognized end marker.");
-        return false;
-    };
-
-    let begin_marker_pos = message.find(begin_marker);
-    let end_marker_pos = message.find(end_marker);
+    let begin_marker_pos = message.find(ENCRYPTED_BEGIN_MARKER);
+    let end_marker_pos = message.find(ENCRYPTED_END_MARKER);
 
     if let (Some(begin), Some(end)) = (begin_marker_pos, end_marker_pos) {
         if begin < end {
-            return true;
+            let start = begin + ENCRYPTED_BEGIN_MARKER.len();
+            let encrypted_section = &message[start..end];
+            let encrypted_bytes = encrypted_section.trim().as_bytes();
+
+            if encrypted_bytes.len() >= 2048 {
+                return true;
+            } else {
+                println!("Encrypted message content is less than 2048 bytes.");
+            }
         } else {
             println!("Markers out of order.");
         }

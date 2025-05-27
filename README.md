@@ -137,6 +137,8 @@ You can access **Amnezichat** source code from multiple mirror repositories:
 
 Distributed under the GPLv3 License. See `LICENSE` for more information.
 
+## <a href="CONTRIBUTORS.md">Contributors</a>
+
 ## Donate to support development of this project!
 
 **Monero(XMR):** 88a68f2oEPdiHiPTmCc3ap5CmXsPc33kXJoWVCZMPTgWFoAhhuicJLufdF1zcbaXhrL3sXaXcyjaTaTtcG1CskB4Jc9yyLV

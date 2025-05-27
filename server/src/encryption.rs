@@ -86,15 +86,7 @@ pub fn is_message_encrypted(message: &str) -> bool {
 
     if let (Some(begin), Some(end)) = (begin_marker_pos, end_marker_pos) {
         if begin < end {
-            let start = begin + ENCRYPTED_BEGIN_MARKER.len();
-            let encrypted_section = &message[start..end];
-            let encrypted_bytes = encrypted_section.trim().as_bytes();
-
-            if encrypted_bytes.len() >= 2048 {
-                return true;
-            } else {
-                println!("Encrypted message content is less than 2048 bytes.");
-            }
+            return true;
         } else {
             println!("Markers out of order.");
         }

@@ -125,7 +125,6 @@ Amnezichat, hiçbir kayıt tutulmamasını ve tüm mesaj verilerinin yalnızca s
 - 🔗 **[Ana Depo (Disroot)](https://git.disroot.org/UmutCamliyurt/Amnezichat)**
 - 🔗 **[Codeberg Aynası](https://codeberg.org/umutcamliyurt/Amnezichat)**
 - 🔗 **[GitHub Aynası](https://github.com/umutcamliyurt/Amnezichat)**
-- 🔗 **[NemesisCloud Aynası](http://c2vz25ugnpnrqmzcksavlzyxmy3eavcxnyxjbjqkez2svoj5dlc5x7id.onion/umutcamliyurt/Amnezichat)**
 
 <!-- LİSANS -->
 ## Lisans

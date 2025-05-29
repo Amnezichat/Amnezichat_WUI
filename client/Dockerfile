@@ -27,9 +27,9 @@ RUN apt-get update && \
 
 RUN curl https://sh.rustup.rs -sSf | sh -s -- -y
 
-RUN git clone https://git.disroot.org/UmutCamliyurt/Amnezichat.git /opt/Amnezichat
+RUN git clone https://git.disroot.org/UmutCamliyurt/Amnezichat_WUI.git /opt/Amnezichat_WUI
 
-WORKDIR /opt/Amnezichat/client
+WORKDIR /opt/Amnezichat_WUI/client
 RUN cargo build --release
 
 EXPOSE 8000

@@ -3,15 +3,15 @@
   <a href="README_TR.md">🇹🇷 Türkçe</a>
 </div>
 
-# Amnezichat
+# Amnezichat_WUI
 
 <img src="banner.png" width="1200">
 
-## Anti-forensic and secure messenger
+## Anti-forensic and secure messenger with web user interface
 <!-- DESCRIPTION -->
 ## Description:
 
-Amnezichat offers a highly secure and privacy-focused messaging experience by ensuring that no logs are retained and all message data is stored exclusively in the server's RAM. This approach significantly enhances user privacy because RAM storage is inherently volatile data is automatically erased when the server is powered down or restarted, leaving no trace of already end-to-end encrypted past communications.
+Amnezichat_WUI offers a highly secure and privacy-focused messaging experience by ensuring that no logs are retained and all message data is stored exclusively in the server's RAM. This approach significantly enhances user privacy because RAM storage is inherently volatile data is automatically erased when the server is powered down or restarted, leaving no trace of already end-to-end encrypted past communications.
 
 <!-- FEATURES -->
 ## Features:
@@ -60,25 +60,6 @@ Amnezichat offers a highly secure and privacy-focused messaging experience by en
 - EdDSA and Dilithium5 for authentication, ECDH and Kyber1024 for key exchange, encryption using ChaCha20-Poly1305
 
 <!-- INSTALLATION -->
-## Server setup:
-
-    sudo apt update
-    sudo apt install curl build-essential git
-    curl https://sh.rustup.rs -sSf | sh -s -- -y
-    git clone https://git.disroot.org/UmutCamliyurt/Amnezichat.git
-    cd Amnezichat/server/
-    cargo build --release
-    cargo run --release
-
-## Server setup with Docker:
-    
-    sudo apt update
-    sudo apt install docker.io git
-    git clone https://git.disroot.org/UmutCamliyurt/Amnezichat.git
-    cd Amnezichat/server/
-    docker build --network=host -t amnezichatserver:latest .
-    docker run --network=host amnezichatserver:latest
-
 ## Client setup:
 
 **For Web UI connect to http://localhost:8000**
@@ -87,8 +68,8 @@ Amnezichat offers a highly secure and privacy-focused messaging experience by en
     sudo apt install curl build-essential git tor xterm
     sudo systemctl enable --now tor.service
     curl https://sh.rustup.rs -sSf | sh -s -- -y
-    git clone https://git.disroot.org/UmutCamliyurt/Amnezichat.git
-    cd Amnezichat/client/
+    git clone https://git.disroot.org/UmutCamliyurt/Amnezichat_WUI.git
+    cd Amnezichat_WUI/client/
     cargo build --release
     cargo run --release
 
@@ -96,16 +77,16 @@ Amnezichat offers a highly secure and privacy-focused messaging experience by en
 
     sudo apt update
     sudo apt install docker.io git
-    git clone https://git.disroot.org/UmutCamliyurt/Amnezichat.git
-    cd Amnezichat/client/
-    docker build --network=host -t amnezichat .
+    git clone https://git.disroot.org/UmutCamliyurt/Amnezichat_WUI.git
+    cd Amnezichat_WUI/client/
+    docker build --network=host -t amnezichat_wui .
     xhost +local:docker
     docker run --rm \
     --network=host \
     -e DISPLAY=$DISPLAY \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
     --env QT_X11_NO_MITSHM=1 \
-    amnezichat:latest
+    amnezichat_wui:latest
 
 ## Client setup with Nix:
 
@@ -126,11 +107,11 @@ Amnezichat offers a highly secure and privacy-focused messaging experience by en
 <!-- MIRRORS -->
 ## Git Mirrors
 
-You can access **Amnezichat** source code from multiple mirror repositories:
+You can access **Amnezichat_WUI** source code from multiple mirror repositories:
 
-- 🔗 **[Disroot Main Repository](https://git.disroot.org/UmutCamliyurt/Amnezichat)**
-- 🔗 **[Codeberg Mirror](https://codeberg.org/umutcamliyurt/Amnezichat)**
-- 🔗 **[GitHub Mirror](https://github.com/umutcamliyurt/Amnezichat)**
+- 🔗 **[Disroot Main Repository](https://git.disroot.org/UmutCamliyurt/Amnezichat_WUI)**
+- 🔗 **[Codeberg Mirror](https://codeberg.org/umutcamliyurt/Amnezichat_WUI)**
+- 🔗 **[GitHub Mirror](https://github.com/umutcamliyurt/Amnezichat_WUI)**
 
 <!-- LICENSE -->
 ## License

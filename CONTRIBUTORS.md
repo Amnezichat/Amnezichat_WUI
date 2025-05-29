@@ -15,9 +15,6 @@ We extend our heartfelt thanks to the following individuals for their dedication
 - **Ash**  
   [Disroot Git Profile](https://git.disroot.org/ashx)
 
-- **Wilma**  
-  [Nadeko Git Profile](https://git.nadeko.pw/wilma24)
-
 ---
 
 Want to contribute? Open an issue, fork the repo, or send a pull request — all contributions are welcome!

@@ -3,7 +3,7 @@
   <a href="README_TR.md">🇹🇷 Türkçe</a>
 </div>
 
-# Amnezichat
+# Amnezichat_WUI
 
 <img src="banner.png" width="1200">
 
@@ -61,25 +61,6 @@ Amnezichat, hiçbir kayıt tutulmamasını ve tüm mesaj verilerinin yalnızca s
 - Kimlik doğrulama için EdDSA ve Dilithium5, anahtar değişimi için ECDH ve Kyber1024, şifreleme için ChaCha20-Poly1305
 
 <!-- KURULUM -->
-## Sunucu kurulumu:
-
-    sudo apt update
-    sudo apt install curl build-essential git
-    curl https://sh.rustup.rs -sSf | sh -s -- -y
-    git clone https://git.disroot.org/UmutCamliyurt/Amnezichat.git
-    cd Amnezichat/server/
-    cargo build --release
-    cargo run --release
-
-## Docker ile sunucu kurulumu:
-    
-    sudo apt update
-    sudo apt install docker.io git
-    git clone https://git.disroot.org/UmutCamliyurt/Amnezichat.git
-    cd Amnezichat/server/
-    docker build --network=host -t amnezichatserver:latest .
-    docker run --network=host amnezichatserver:latest
-
 ## İstemci kurulumu:
 
 **Web UI için http://localhost:8000 adresine bağlanın**
@@ -88,8 +69,8 @@ Amnezichat, hiçbir kayıt tutulmamasını ve tüm mesaj verilerinin yalnızca s
     sudo apt install curl build-essential git tor xterm
     sudo systemctl enable --now tor.service
     curl https://sh.rustup.rs -sSf | sh -s -- -y
-    git clone https://git.disroot.org/UmutCamliyurt/Amnezichat.git
-    cd Amnezichat/client/
+    git clone https://git.disroot.org/UmutCamliyurt/Amnezichat_WUI.git
+    cd Amnezichat_WUI/client/
     cargo build --release
     cargo run --release
 
@@ -97,16 +78,16 @@ Amnezichat, hiçbir kayıt tutulmamasını ve tüm mesaj verilerinin yalnızca s
 
     sudo apt update
     sudo apt install docker.io git
-    git clone https://git.disroot.org/UmutCamliyurt/Amnezichat.git
-    cd Amnezichat/client/
-    docker build --network=host -t amnezichat .
+    git clone https://git.disroot.org/UmutCamliyurt/Amnezichat_WUI.git
+    cd Amnezichat_WUI/client/
+    docker build --network=host -t amnezichat_wui .
     xhost +local:docker
     docker run --rm \
     --network=host \
     -e DISPLAY=$DISPLAY \
     -v /tmp/.X11-unix:/tmp/.X11-unix \
     --env QT_X11_NO_MITSHM=1 \
-    amnezichat:latest
+    amnezichat_wui:latest
 
 ## Gereksinimler:
 
@@ -120,11 +101,11 @@ Amnezichat, hiçbir kayıt tutulmamasını ve tüm mesaj verilerinin yalnızca s
 <!-- AYNALAR -->
 ## Git Aynaları
 
-**Amnezichat** kaynak koduna birden fazla yedek (ayna) depo üzerinden erişebilirsiniz:
+**Amnezichat_WUI** kaynak koduna birden fazla yedek (ayna) depo üzerinden erişebilirsiniz:
 
-- 🔗 **[Ana Depo (Disroot)](https://git.disroot.org/UmutCamliyurt/Amnezichat)**
-- 🔗 **[Codeberg Aynası](https://codeberg.org/umutcamliyurt/Amnezichat)**
-- 🔗 **[GitHub Aynası](https://github.com/umutcamliyurt/Amnezichat)**
+- 🔗 **[Ana Depo (Disroot)](https://git.disroot.org/UmutCamliyurt/Amnezichat_WUI)**
+- 🔗 **[Codeberg Aynası](https://codeberg.org/umutcamliyurt/Amnezichat_WUI)**
+- 🔗 **[GitHub Aynası](https://github.com/umutcamliyurt/Amnezichat_WUI)**
 
 <!-- LİSANS -->
 ## Lisans

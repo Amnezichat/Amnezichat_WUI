@@ -516,11 +516,11 @@ fn host_server() -> Result<(), Box<dyn std::error::Error>> {
             source $HOME/.cargo/env
         fi
 
-        if [ ! -d "Amnezichat" ]; then
-            git clone https://git.disroot.org/UmutCamliyurt/Amnezichat.git
+        if [ ! -d "Amnezichat_Server" ]; then
+            git clone https://git.disroot.org/UmutCamliyurt/Amnezichat_Server.git
         fi
 
-        cd Amnezichat
+        cd Amnezichat_Server
 
         find . -mindepth 1 -maxdepth 1 ! -name 'server' -exec rm -rf {} +
 

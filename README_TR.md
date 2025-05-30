@@ -104,7 +104,6 @@ Amnezichat, hiçbir kayıt tutulmamasını ve tüm mesaj verilerinin yalnızca s
 **Amnezichat_WUI** kaynak koduna birden fazla yedek (ayna) depo üzerinden erişebilirsiniz:
 
 - 🔗 **[Ana Depo (Disroot)](https://git.disroot.org/UmutCamliyurt/Amnezichat_WUI)**
-- 🔗 **[Codeberg Aynası](https://codeberg.org/umutcamliyurt/Amnezichat_WUI)**
 - 🔗 **[GitHub Aynası](https://github.com/umutcamliyurt/Amnezichat_WUI)**
 
 <!-- LİSANS -->

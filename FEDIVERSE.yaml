@@ -14,15 +14,6 @@ git:
   repo_mirror:
     '0':
       clearnet:
-        browser: 'https://codeberg.org/umutcamliyurt/Amnezichat'
-        clone_http: 'https://codeberg.org/umutcamliyurt/Amnezichat.git'
-        clone_ssh: 'ssh://git@codeberg.org:umutcamliyurt/Amnezichat.git'
-    '1':
-      clearnet:
         browser: 'https://github.com/umutcamliyurt/Amnezichat'
         clone_http: 'https://github.com/umutcamliyurt/Amnezichat.git'
         clone_ssh: 'ssh://git@github.com:umutcamliyurt/Amnezichat.git'
-    '2':
-      onion:
-        browser: 'http://c2vz25ugnpnrqmzcksavlzyxmy3eavcxnyxjbjqkez2svoj5dlc5x7id.onion/umutcamliyurt/Amnezichat'
-        clone_http: 'http://c2vz25ugnpnrqmzcksavlzyxmy3eavcxnyxjbjqkez2svoj5dlc5x7id.onion/umutcamliyurt/Amnezichat.git'

@@ -4,32 +4,36 @@ mod network_operations;
 mod key_exchange;
 mod authentication;
 mod encryption;
-use gui::create_rocket;
-use gui::MessagingApp;
-use key_operations::key_operations_dilithium;
-use key_operations::key_operations_eddsa;
-use network_operations::create_client_with_proxy;
-use network_operations::fetch_kyber_pubkey;
-use network_operations::fetch_dilithium_pubkeys;
-use network_operations::fetch_eddsa_pubkeys;
-use network_operations::fetch_ciphertext;
-use network_operations::send_kyber_pubkey;
-use network_operations::send_dilithium_pubkey;
-use network_operations::send_eddsa_pubkey;
-use network_operations::send_ciphertext;
-use network_operations::send_encrypted_message;
-use network_operations::receive_and_fetch_messages;
-use key_exchange::kyber_key_exchange;
-use key_exchange::perform_ecdh_key_exchange;
-use authentication::sign_data_with_dilithium;
-use authentication::sign_data_with_eddsa;
-use authentication::verify_signature_with_dilithium;
-use authentication::verify_signature_with_eddsa;
-use encryption::derive_salt_from_password;
-use encryption::derive_key;
-use encryption::combine_shared_secrets;
-use encryption::encrypt_data;
-use encryption::decrypt_data;
+
+use gui::{create_rocket, MessagingApp};
+use key_operations::{key_operations_dilithium, key_operations_eddsa};
+use network_operations::{
+    create_client_with_proxy,
+    fetch_kyber_pubkey,
+    fetch_dilithium_pubkeys,
+    fetch_eddsa_pubkeys,
+    fetch_ciphertext,
+    send_kyber_pubkey,
+    send_dilithium_pubkey,
+    send_eddsa_pubkey,
+    send_ciphertext,
+    send_encrypted_message,
+    receive_and_fetch_messages,
+};
+use key_exchange::{kyber_key_exchange, perform_ecdh_key_exchange};
+use authentication::{
+    sign_data_with_dilithium,
+    sign_data_with_eddsa,
+    verify_signature_with_dilithium,
+    verify_signature_with_eddsa,
+};
+use encryption::{
+    derive_salt_from_password,
+    derive_key,
+    combine_shared_secrets,
+    encrypt_data,
+    decrypt_data,
+};
 
 use oqs::*;
 use oqs::sig::{Sig, PublicKey, SecretKey, Algorithm as SigAlgorithm};

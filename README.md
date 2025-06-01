@@ -68,7 +68,7 @@ Amnezichat_WUI offers a highly secure and privacy-focused messaging experience b
     sudo apt install curl build-essential git tor xterm
     sudo systemctl enable --now tor.service
     curl https://sh.rustup.rs -sSf | sh -s -- -y
-    git clone https://git.disroot.org/UmutCamliyurt/Amnezichat_WUI.git
+    git clone https://git.disroot.org/Amnezichat/Amnezichat_WUI.git
     cd Amnezichat_WUI/client/
     cargo build --release
     cargo run --release
@@ -77,7 +77,7 @@ Amnezichat_WUI offers a highly secure and privacy-focused messaging experience b
 
     sudo apt update
     sudo apt install docker.io git
-    git clone https://git.disroot.org/UmutCamliyurt/Amnezichat_WUI.git
+    git clone https://git.disroot.org/Amnezichat/Amnezichat_WUI.git
     cd Amnezichat_WUI/client/
     docker build --network=host -t amnezichat_wui .
     xhost +local:docker
@@ -109,9 +109,9 @@ Amnezichat_WUI offers a highly secure and privacy-focused messaging experience b
 
 You can access **Amnezichat_WUI** source code from multiple mirror repositories:
 
-- 🔗 **[Disroot Main Repository](https://git.disroot.org/UmutCamliyurt/Amnezichat_WUI)**
-- 🔗 **[Codeberg Mirror](https://codeberg.org/umutcamliyurt/Amnezichat_WUI)**
-- 🔗 **[GitHub Mirror](https://github.com/umutcamliyurt/Amnezichat_WUI)**
+- 🔗 **[Disroot Main Repository](https://git.disroot.org/Amnezichat/Amnezichat_WUI)**
+- 🔗 **[Codeberg Mirror](https://codeberg.org/Amnezichat/Amnezichat_WUI)**
+- 🔗 **[GitHub Mirror](https://github.com/Amnezichat/Amnezichat_WUI)**
 
 <!-- LICENSE -->
 ## License

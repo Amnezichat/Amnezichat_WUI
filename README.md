@@ -110,7 +110,6 @@ Amnezichat_WUI offers a highly secure and privacy-focused messaging experience b
 You can access **Amnezichat_WUI** source code from multiple mirror repositories:
 
 - 🔗 **[Disroot Main Repository](https://git.disroot.org/Amnezichat/Amnezichat_WUI)**
-- 🔗 **[Codeberg Mirror](https://codeberg.org/Amnezichat/Amnezichat_WUI)**
 - 🔗 **[GitHub Mirror](https://github.com/Amnezichat/Amnezichat_WUI)**
 
 <!-- LICENSE -->
